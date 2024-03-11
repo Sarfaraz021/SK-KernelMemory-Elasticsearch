@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34310.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{6EF76FD8-4C35-4370-8539-5DDF45357A50}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		code-analysis.props = code-analysis.props
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
+		CONFIGURATION.md = CONFIGURATION.md
+		CONTRIBUTING.md = CONTRIBUTING.md
+		Directory.Build.props = Directory.Build.props
+		Directory.Packages.props = Directory.Packages.props
+		icon.png = icon.png
+		LICENSE = LICENSE
+		nuget-package.props = nuget-package.props
+		nuget.config = nuget.config
+		NUGET.md = NUGET.md
+		README.md = README.md
+		SECURITY.md = SECURITY.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{98E1758C-113A-41F4-85A3-1C8EFFA6CEC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A455710B-0D10-4200-AB39-DB5ECC457FAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{9532FF95-6D14-43E7-B554-F5289C605172}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElasticsearchMemoryStorage", "src\ElasticsearchMemoryStorage\ElasticsearchMemoryStorage.csproj", "{BE8D8957-8A6F-4879-BAAE-0462A118DFD3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "tests\UnitTests\UnitTests.csproj", "{A615A571-2B3A-4C2B-9B1C-371BF87D8DBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{F8AB554F-C604-4098-B4C1-4CBAD790ADC0}"
+	ProjectSection(SolutionItems) = preProject
+		docker\.env = docker\.env
+		docker\.env.example = docker\.env.example
+		docker\docker-compose.yml = docker\docker-compose.yml
+		docker\filebeat.yml = docker\filebeat.yml
+		docker\kibana.yml = docker\kibana.yml
+		docker\logstash.conf = docker\logstash.conf
+		docker\metricbeat.yml = docker\metricbeat.yml
+		docker\README.md = docker\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE8D8957-8A6F-4879-BAAE-0462A118DFD3}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{BE8D8957-8A6F-4879-BAAE-0462A118DFD3}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{BE8D8957-8A6F-4879-BAAE-0462A118DFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE8D8957-8A6F-4879-BAAE-0462A118DFD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A615A571-2B3A-4C2B-9B1C-371BF87D8DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A615A571-2B3A-4C2B-9B1C-371BF87D8DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A615A571-2B3A-4C2B-9B1C-371BF87D8DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A615A571-2B3A-4C2B-9B1C-371BF87D8DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE8D8957-8A6F-4879-BAAE-0462A118DFD3} = {98E1758C-113A-41F4-85A3-1C8EFFA6CEC2}
+		{A615A571-2B3A-4C2B-9B1C-371BF87D8DBE} = {A455710B-0D10-4200-AB39-DB5ECC457FAC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {964BE41E-E834-4596-BFDB-5F9D5BA9F048}
+	EndGlobalSection
+EndGlobal
